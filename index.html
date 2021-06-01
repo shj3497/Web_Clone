@@ -17,10 +17,21 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="src/index.js"></script>
+    <!-- <script>
+      let counter = 2;
+      setInterval(() => {
+        document.querySelector("#radio" + counter).checked = true;
+        counter++;
+        if (counter > 5) {
+          counter = 1;
+        }
+      }, 5000);
+    </script> -->
   </head>
+
   <body>
     <!-- navbar -->
-    <section class="navbar">
+    <section id="navbar">
       <h2 class="title">CUBE STYLE</h2>
       <ul class="navbar__menus">
         <li class="navbar__menu">HOME</li>
@@ -30,7 +41,58 @@
         <li class="navbar__menu">CONTACT</li>
       </ul>
     </section>
+
     <!-- main slide images -->
-    <section class="home"></section>
+    <section id="home">
+      <!-- image slider start -->
+      <div class="slider">
+        <div class="slides">
+          <!-- radio buttons start -->
+          <input type="radio" name="radio-btn" id="radio1" checked="true" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <input type="radio" name="radio-btn" id="radio5" />
+          <!-- radio buttons end -->
+          <!-- slide images start -->
+          <div class="slide first">
+            <img src="./imgs/slide_img/slider_01.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/slide_img/slider_02.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/slide_img/slider_03.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/slide_img/slider_04.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./imgs/slide_img/slider_05.jpg" alt="" />
+          </div>
+          <!-- slide images end -->
+
+          <!-- automatic navgation start -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+          <!-- automatic navgation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+      </div>
+      <!-- image slider end -->
+    </section>
   </body>
 </html>
