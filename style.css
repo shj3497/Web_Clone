@@ -1,5 +1,7 @@
 :root {
   --color-white: #ffffff;
+  --color-dark-gray: #303030;
+  --color-gray: #7c7c7c;
 
   --font-style-gothic: "Gothic A1", sans-serif;
   --font-style-sans: "Noto Sans KR", sans-serif;
@@ -229,22 +231,21 @@ ul {
   background: var(--color-white);
 }
 
-/* section service */
+/* section Our Service */
 #service {
   width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 40px;
   padding: 0;
   background: var(--color-white);
 }
 
-.service__list {
+.service__title {
   margin: 0;
-  margin-bottom: 20px;
-  font-size: var(--font-size-medium);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .services {
@@ -275,29 +276,34 @@ ul {
   height: 100%;
 }
 
-/* section works */
+/* section Steps in our Works */
 
 #works {
   width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: 40px;
+  margin: auto;
   background: url(./imgs/background_img/background_01.jpg);
   background-attachment: fixed;
   color: var(--color-white);
 }
 
-.works-title {
+.works__title {
   margin: 0;
   padding-top: 40px;
+}
+
+.works__sub-title {
+  margin: 0;
+  padding-top: 20px;
 }
 
 .work__list {
   max-width: 80%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 40px;
@@ -321,4 +327,89 @@ ul {
 .work__type i {
   font-size: 50px;
   line-height: 150px;
+}
+
+/* section Our Project */
+#projects {
+  width: 90vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.projects__title {
+  margin: 20px;
+}
+
+.project__categories {
+  margin: 20px;
+}
+
+.project__category {
+  border: 0;
+  color: var(--color-gray);
+  font-family: var(--font-style-sans);
+  font-size: var(--font-size-micro);
+  font-weight: var(--weight-semi-bold);
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 300ms ease;
+  display: inline-flex;
+}
+
+.project__category .first {
+  color: black;
+}
+
+.project__category:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  position: relative;
+  margin: 20px;
+  max-height: 260px;
+  max-width: 400px;
+}
+
+.project__hover {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.project__name {
+  margin: 0;
+}
+
+.project:hover .project__hover {
+  opacity: 0.8;
+}
+
+.project__hover:after {
+  content: "";
+  display: block;
+}
+
+.project__img {
+  height: 100%;
+  width: 100%;
 }
