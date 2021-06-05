@@ -1,11 +1,11 @@
-// let counter = 2;
-// setInterval(() => {
-//   document.querySelector("#radio" + counter).checked = true;
-//   counter++;
-//   if (counter > 5) {
-//     counter = 1;
-//   }
-// }, 5000);
+let counter = 2;
+setInterval(() => {
+  document.querySelector("#radio" + counter).checked = true;
+  counter++;
+  if (counter > 5) {
+    counter = 1;
+  }
+}, 5000);
 
 // navbar
 const navbar = document.querySelector('#navbar');
