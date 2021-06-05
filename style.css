@@ -356,6 +356,7 @@ ul {
 .project__category {
   border: 0;
   color: var(--color-gray);
+  background: var(--color-white);
   font-family: var(--font-style-sans);
   font-size: var(--font-size-micro);
   font-weight: var(--weight-semi-bold);
@@ -365,7 +366,7 @@ ul {
   display: inline-flex;
 }
 
-.project__category .first {
+.selected {
   color: black;
 }
 
@@ -379,6 +380,13 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.project__list.anim-out {
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .project {
@@ -386,6 +394,10 @@ ul {
   margin: 20px;
   height: 260px;
   width: 400px;
+}
+
+.invisible {
+  display: none;
 }
 
 .project__hover {
