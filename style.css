@@ -29,15 +29,18 @@ body {
 }
 
 h1 {
+  margin: 0;
   font-size: var(--font-size-large);
   font-weight: var(--weight-semi-bold);
 }
 
 h2 {
+  margin: 0;
   font-size: var(--font-size-medium);
 }
 
 h3 {
+  margin: 0;
   font-size: var(--font-size-small);
 }
 
@@ -50,6 +53,13 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: black;
+  font-size: var(--font-size-micro);
+  font-weight: var(--weight-regular);
+  text-decoration: none;
 }
 
 /* section navbar */
@@ -72,7 +82,6 @@ ul {
 }
 
 .navbar__title {
-  margin: 0;
   margin-left: 20px;
   font-size: var(--font-size-medium);
 }
@@ -237,9 +246,9 @@ ul {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: auto;
   padding: 0;
   background: var(--color-white);
+  margin-top: 100px;
 }
 
 .service__container {
@@ -248,8 +257,6 @@ ul {
 }
 
 .service__title {
-  margin: 0;
-
   padding-bottom: 40px;
 }
 
@@ -295,12 +302,10 @@ ul {
 }
 
 .works__title {
-  margin: 0;
   padding-top: 40px;
 }
 
 .works__sub-title {
-  margin: 0;
   padding-top: 20px;
 }
 
@@ -341,7 +346,7 @@ ul {
   text-align: center;
   align-items: center;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .projects__container {
@@ -430,4 +435,39 @@ ul {
 .project__img {
   height: 100%;
   width: 100%;
+}
+
+/* section About Us */
+#about {
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.about__container {
+  margin: 40px;
+}
+
+.about__title {
+  text-align: center;
+}
+
+.about__img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about__img img {
+  width: 100%;
+}
+
+.about__description h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about__description a:hover {
+  color: blue;
 }
