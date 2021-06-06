@@ -1,3 +1,4 @@
+// home slide img
 let counter = 2;
 setInterval(() => {
   document.querySelector("#radio" + counter).checked = true;

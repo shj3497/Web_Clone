@@ -8,8 +8,8 @@
 
   --font-size-large: 3rem;
   --font-size-medium: 2rem;
-  --font-size-small: 1.3rem;
-  --font-size-micro: 0.8rem;
+  --font-size-small: 1.2rem;
+  --font-size-micro: 0.9rem;
 
   /* Font weight */
   --weight-bold: 700;
@@ -242,18 +242,17 @@ a {
 
 /* section Our Service */
 #service {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 0;
-  background: var(--color-white);
   margin-top: 100px;
 }
 
 .service__container {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  width: 70%;
+  margin: auto;
 }
 
 .service__title {
@@ -288,10 +287,14 @@ a {
   height: 100%;
 }
 
+.service > h3 {
+  margin-top: 20px;
+}
+
 /* section Steps in our Works */
 
 #works {
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -341,7 +344,7 @@ a {
 
 /* section Our Project */
 #projects {
-  width: 90vw;
+  width: 100vw;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -350,6 +353,8 @@ a {
 }
 
 .projects__container {
+  width: 90%;
+  margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -439,15 +444,15 @@ a {
 
 /* section About Us */
 #about {
-  width: 90vw;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-  margin: auto;
   margin-top: 100px;
 }
 
 .about__container {
-  margin: 40px;
+  width: 70%;
+  margin: auto;
 }
 
 .about__title {
@@ -455,14 +460,20 @@ a {
 }
 
 .about__img {
+  width: 100%;
+  margin: auto;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .about__img img {
   width: 100%;
+  height: 100%;
 }
 
+.about__description {
+  width: 100%;
+  margin: auto;
+}
 .about__description h3 {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -473,3 +484,55 @@ a {
 }
 
 /* section Our Skills */
+#skills {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background: whitesmoke;
+}
+
+.skills__container {
+  width: 70%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skills__title {
+  text-align: left;
+}
+
+.skill_list {
+  margin-top: 40px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+}
+.skill__bar {
+  width: 100%;
+  height: 20px;
+  background: lightgray;
+  position: relative;
+}
+
+.skill__value {
+  position: absolute;
+  background: gray;
+  height: 20px;
+  /* display: none;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out; */
+}
+
+/* .skill__value-event {
+  display: block;
+  transform: translateX(0%);
+} */
