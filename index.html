@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="src/index.js" defer></script>
+    <script src="src/skill_event.js" defer></script>
     <script></script>
   </head>
 
@@ -94,7 +95,6 @@
     <section id="service">
       <div class="service__container">
         <h2 class="service__title">OUR SERVICE</h2>
-        <!-- services start -->
         <div class="services">
           <div class="service">
             <div class="service__img">
@@ -163,7 +163,6 @@
             </p>
           </div>
         </div>
-        <!-- services end -->
       </div>
     </section>
 
@@ -393,7 +392,7 @@
     <!-- section Our Skills -->
     <section id="skills">
       <div class="skills__container">
-        <h3 class="skills__title">Our Skills</h3>
+        <h2 class="skills__title">Our Skills</h2>
         <div class="skill_list">
           <div class="skill">
             <div class="skill__description">
@@ -422,6 +421,117 @@
               <div class="skill__value" style="width: 85%"></div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section Our Member -->
+    <section id="members">
+      <div class="members__container">
+        <h2 class="members__title">Our Member</h2>
+        <p>
+          오늘날의 고객은 기업데 대한 믿음의 정도에 따라 그 제품이나 서비스를
+          선택합니다. 이는 특정 기업의 브랜드 가치가 고객의 신뢰에 의해서
+          결정된다는 뜻이기도 합니다.
+        </p>
+        <div class="members__btn">
+          <button class="members__btn-left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="members__btn-right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="members__slider">
+          <div class="member__list">
+            <div class="member">
+              <div class="member__img">
+                <img src="./imgs/member_img/member_01.jpg" alt="member_01" />
+              </div>
+              <h3 class="member__name">홍길동</h3>
+              <p class="member__position">ART DIRECTOR</p>
+            </div>
+            <div class="member">
+              <div class="member__img">
+                <img src="./imgs/member_img/member_02.jpg" alt="member_02" />
+              </div>
+              <h3 class="member__name">홍길동</h3>
+              <p class="member__position">ART DIRECTOR</p>
+            </div>
+            <div class="member">
+              <div class="member__img">
+                <img src="./imgs/member_img/member_03.jpg" alt="member_03" />
+              </div>
+              <h3 class="member__name">홍길동</h3>
+              <p class="member__position">ART DIRECTOR</p>
+            </div>
+            <div class="member">
+              <div class="member__img">
+                <img src="./imgs/member_img/member_04.jpg" alt="member_04" />
+              </div>
+              <h3 class="member__name">홍길동</h3>
+              <p class="member__position">ART DIRECTOR</p>
+            </div>
+            <div class="member">
+              <div class="member__img">
+                <img src="./imgs/member_img/member_05.jpg" alt="member_05" />
+              </div>
+              <h3 class="member__name">홍길동</h3>
+              <p class="member__position">ART DIRECTOR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section Contact Us -->
+    <section id="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Contact Us</h2>
+        <h3 class="contact__sub-title">
+          Feel free to drop us a line to contact us
+        </h3>
+        <div class="contact__info_list">
+          <ul class="contact__infos">
+            <li class="contact__info">
+              <p><i class="fas fa-map-marker-alt"></i>서울특별시 금천구</p>
+            </li>
+            <li class="contact__info">
+              <i class="fas fa-id-card"></i>
+              <a href="mailto:shj3497@gmail.com">shj3497@gmail.com</a>
+            </li>
+            <li class="contact__info">
+              <p><i class="fas fa-phone"></i>+82 010 2905 3497</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact__form">
+          <form action="">
+            <table class="contact__form_table">
+              <tbody>
+                <tr>
+                  <td><input type="text" class="name" placeholder="Name" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" class="phone" placeholder="Phone" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" class="email" placeholder="Email" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea class="message" placeholder="Message"></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="button" value="확인" />
+            <input type="reset" value="취소" />
+          </form>
         </div>
       </div>
     </section>

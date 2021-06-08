@@ -62,6 +62,37 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  font-size: var(--font-size-micro);
+  font-weight: var(--weight-semi-bold);
+  font-family: var(--font-style-sans);
+  resize: vertical; /* 상하만 가능 */
+}
+
+/* Chrome */
+input,
+textarea::-webkit-input-placeholder {
+  font-size: var(--font-size-micro);
+  font-weight: var(--weight-semi-bold);
+  font-family: var(--font-style-sans);
+}
+
+/* Firefox */
+input,
+textarea:-moz-placeholder {
+  font-size: var(--font-size-micro);
+  font-weight: var(--weight-semi-bold);
+  font-family: var(--font-style-sans);
+}
+
+/* IE */
+input,
+textarea:-ms-input-placeholder {
+  font-size: var(--font-size-micro);
+  font-weight: var(--weight-semi-bold);
+  font-family: var(--font-style-sans);
+}
+
 /* section navbar */
 #navbar {
   position: fixed;
@@ -242,7 +273,7 @@ a {
 
 /* section Our Service */
 #service {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -260,7 +291,7 @@ a {
 }
 
 .services {
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -294,14 +325,18 @@ a {
 /* section Steps in our Works */
 
 #works {
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: auto;
   background: url(./imgs/background_img/background_01.jpg);
   background-attachment: fixed;
   color: var(--color-white);
+}
+
+.works__container {
+  width: 80%;
+  margin: auto;
 }
 
 .works__title {
@@ -313,18 +348,16 @@ a {
 }
 
 .work__list {
-  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .work {
-  max-width: 250px;
+  width: 300px;
   margin: 20px;
 }
 
@@ -344,16 +377,15 @@ a {
 
 /* section Our Project */
 #projects {
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: auto;
   margin-top: 100px;
 }
 
 .projects__container {
-  width: 90%;
+  width: 70%;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -402,8 +434,8 @@ a {
 .project {
   position: relative;
   margin: 20px;
-  height: 260px;
-  width: 400px;
+  height: 100%;
+  width: 29%;
 }
 
 .invisible {
@@ -444,7 +476,7 @@ a {
 
 /* section About Us */
 #about {
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -460,14 +492,13 @@ a {
 }
 
 .about__img {
-  width: 100%;
-  margin: auto;
   margin-top: 40px;
 }
 
 .about__img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .about__description {
@@ -485,7 +516,7 @@ a {
 
 /* section Our Skills */
 #skills {
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -495,8 +526,7 @@ a {
 .skills__container {
   width: 70%;
   margin: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 80px 0 80px 0;
 }
 
 .skills__title {
@@ -536,3 +566,212 @@ a {
   display: block;
   transform: translateX(0%);
 } */
+
+/* section Our Member */
+#members {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.members__container {
+  width: 70%;
+  margin: auto;
+}
+
+.members__btn {
+  margin: 20px 0 20px 0;
+}
+
+.members__btn button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  background: var(--color-dark-gray);
+  transition: all 300ms ease;
+}
+
+.members__btn button:hover {
+  background: black;
+}
+
+.members__slider {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.member__list {
+  width: 150%;
+  display: flex;
+}
+
+.member {
+  height: 100%;
+  width: 20%;
+  text-align: center;
+}
+
+.member:not(:last-child) {
+  margin-right: 40px;
+}
+
+.member h3 {
+  margin-top: 20px;
+}
+
+.member p {
+  margin: 5px;
+}
+
+.member__img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* section Contact */
+#contact {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact__container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact__sub-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: var(--weight-regular);
+}
+
+.contact__info_list {
+  margin: 10px 0px 10px 0px;
+}
+.contact__infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact__info {
+  margin: 5px 20px 5px 20px;
+}
+
+.contact__info a:hover {
+  color: blue;
+}
+
+.contact__info p {
+  margin: 0;
+}
+
+.contact__info i {
+  margin-right: 10px;
+  font-size: var(--font-size-micro);
+}
+
+.contact__form_table {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(226, 226, 226);
+  border-top: 2px solid black;
+  border-collapse: collapse;
+}
+
+.contact__form_table tr,
+.contact__form_table td {
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.contact__form_table input {
+  box-sizing: border-box;
+  width: 95%;
+  padding: 10px;
+  border: 0;
+  background: rgb(226, 226, 226);
+  margin: 5px;
+}
+
+.contact__form_table textarea {
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 200px;
+  padding: 10px;
+  border: 0;
+  background: rgb(226, 226, 226);
+  margin: 5px;
+}
+
+.contact__form_table input,
+.contact__form_table textarea:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .service__container {
+    width: 90%;
+  }
+
+  .service {
+    max-width: 250px;
+  }
+
+  .works__container {
+    width: 90%;
+  }
+
+  .work__list {
+    flex-wrap: wrap;
+  }
+
+  .work {
+    width: 300px;
+  }
+
+  .projects__container {
+    width: 90%;
+  }
+
+  .project {
+    margin: 10px;
+  }
+
+  .project .about__container {
+    width: 90%;
+  }
+
+  .skills__container {
+    width: 90%;
+  }
+
+  .members__container {
+    width: 90%;
+  }
+
+  .contact__container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .project {
+    /* 400 260 */
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .work__list {
+    flex-wrap: wrap;
+  }
+}
