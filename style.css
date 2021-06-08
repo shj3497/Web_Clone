@@ -746,7 +746,7 @@ textarea:-ms-input-placeholder {
     margin: 10px;
   }
 
-  .project .about__container {
+  .about__container {
     width: 90%;
   }
 
@@ -769,9 +769,5 @@ textarea:-ms-input-placeholder {
     height: 100%;
     width: 100%;
     margin: 10px;
-  }
-
-  .work__list {
-    flex-wrap: wrap;
   }
 }
