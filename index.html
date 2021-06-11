@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="style.css" />
     <script src="src/index.js" defer></script>
     <script src="src/skill_event.js" defer></script>
-    <script></script>
+    <script src="src/onScroll.js" defer></script>
+    <script type="text/javascript"></script>
   </head>
 
   <body>
@@ -92,7 +93,7 @@
     </section>
 
     <!-- section Our Service -->
-    <section id="service">
+    <section id="service" class="reveal">
       <div class="service__container">
         <h2 class="service__title">OUR SERVICE</h2>
         <div class="services">
@@ -167,7 +168,7 @@
     </section>
 
     <!-- section Steps in our Works -->
-    <section id="works">
+    <section id="works" class="reveal">
       <div class="works__container">
         <h2 class="works__title">Steps in Our Works</h2>
         <h3 class="works__sub-title">Creative Design - Cube6.co.kr</h3>
@@ -213,7 +214,7 @@
     </section>
 
     <!-- section Our Project -->
-    <section id="projects">
+    <section id="projects" class="reveal">
       <div class="projects__container">
         <h2 class="projects__title">Our Project</h2>
         <div class="project__categories">
@@ -337,7 +338,7 @@
     </section>
 
     <!-- section About Us -->
-    <section id="about">
+    <section id="about" class="reveal">
       <div class="about__container">
         <h2 class="about__title">About Us</h2>
         <div class="about__img">
@@ -390,35 +391,35 @@
     </section>
 
     <!-- section Our Skills -->
-    <section id="skills">
+    <section id="skills" class="reveal">
       <div class="skills__container">
         <h2 class="skills__title">Our Skills</h2>
         <div class="skill_list">
           <div class="skill">
-            <div class="skill__description">
+            <div class="skill__description" data-skill="90%">
               <span>열정</span>
               <span>90%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 90%"></div>
+              <div class="skill__value"></div>
             </div>
           </div>
           <div class="skill">
-            <div class="skill__description">
+            <div class="skill__description" data-skill="80%">
               <span>고집</span>
               <span>80%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 80%"></div>
+              <div class="skill__value"></div>
             </div>
           </div>
           <div class="skill">
-            <div class="skill__description">
+            <div class="skill__description" data-skill="85%">
               <span>까칠함</span>
               <span>85%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 85%"></div>
+              <div class="skill__value"></div>
             </div>
           </div>
         </div>
@@ -426,7 +427,7 @@
     </section>
 
     <!-- section Our Member -->
-    <section id="members">
+    <section id="members" class="reveal">
       <div class="members__container">
         <h2 class="members__title">Our Member</h2>
         <p>
@@ -532,6 +533,50 @@
             <input type="button" value="확인" />
             <input type="reset" value="취소" />
           </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- section map -->
+    <section id="map">
+      <div class="map__container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12668.630850454623!2d126.88713518493994!3d37.4569980399514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61c615a3d89f%3A0x4e8a86e9c34e96c5!2z7ISc7Jq47Yq567OE7IucIOq4iOyynOq1rA!5e0!3m2!1sko!2skr!4v1623406782058!5m2!1sko!2skr"
+          width="100%"
+          height="450px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="footbar">
+      <div class="footbar__container">
+        <div class="footbar__cube6">
+          <p>Copyright© 2017 Cube6. All rights reserved. Design by cube6</p>
+          <p>
+            <a href="javascript:void(0)">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="javascript:void(0)">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="javascript:void(0)">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="javascript:void(0)">
+              <i class="fab fa-vimeo-v"></i>
+            </a>
+          </p>
+        </div>
+        <div class="footbar__hj">
+          <p>Clone Coding ShimHyeokJin</p>
+          <p>
+            <a href="https://github.com/shj3497" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </p>
         </div>
       </div>
     </section>

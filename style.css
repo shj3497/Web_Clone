@@ -93,6 +93,19 @@ textarea:-ms-input-placeholder {
   font-family: var(--font-style-sans);
 }
 
+/* Reveal Website On Scroll */
+/* .reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+} */
+
 /* section navbar */
 #navbar {
   position: fixed;
@@ -434,8 +447,8 @@ textarea:-ms-input-placeholder {
 .project {
   position: relative;
   margin: 20px;
-  height: 100%;
   width: 29%;
+  height: 100%;
 }
 
 .invisible {
@@ -546,6 +559,7 @@ textarea:-ms-input-placeholder {
 .skill {
   margin-top: 10px;
 }
+
 .skill__bar {
   width: 100%;
   height: 20px;
@@ -554,18 +568,11 @@ textarea:-ms-input-placeholder {
 }
 
 .skill__value {
+  width: 1%;
   position: absolute;
   background: gray;
   height: 20px;
-  /* display: none;
-  transform: translateX(-100%);
-  transition: transform 300ms ease-in-out; */
 }
-
-/* .skill__value-event {
-  display: block;
-  transform: translateX(0%);
-} */
 
 /* section Our Member */
 #members {
@@ -717,6 +724,68 @@ textarea:-ms-input-placeholder {
   outline: none;
 }
 
+.contact__form > form > input {
+  margin: 10px;
+  margin-top: 30px;
+  width: 65px;
+  height: 25px;
+  font-size: var(--font-size-micro);
+  padding: 0;
+  cursor: pointer;
+}
+
+/* section Map */
+#map {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#footbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: #2a2a2a;
+}
+
+.footbar__container {
+  width: 70%;
+  margin: auto;
+}
+
+.footbar__container i {
+  color: white;
+  margin: 0px 5px 0px 5px;
+  font-size: var(--font-size-small);
+}
+
+.footbar__container p {
+  margin: 0px 10px 10px 10px;
+}
+
+.footbar__cube6 {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  padding: 0px 10px 0px 10px;
+}
+
+.footbar__hj {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0px 400px 0px 400px; */
+  color: white;
+  padding: 0px 10px 0px 10px;
+}
+
+/* responsive web */
 @media (min-width: 768px) and (max-width: 1200px) {
   .service__container {
     width: 90%;
@@ -761,13 +830,79 @@ textarea:-ms-input-placeholder {
   .contact__container {
     width: 90%;
   }
+
+  .footbar__container {
+    width: 90%;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .service__container {
+    width: 90%;
+  }
+
+  .service {
+    max-width: 250px;
+  }
+
+  .works__container {
+    width: 90%;
+  }
+
+  .work__list {
+    flex-wrap: wrap;
+  }
+
+  .work {
+    width: 300px;
+  }
+
+  .projects__container {
+    width: 90%;
+  }
+
   .project {
-    /* 400 260 */
+    margin: 10px;
     height: 100%;
     width: 100%;
-    margin: 10px;
+  }
+
+  .about__container {
+    width: 90%;
+  }
+
+  .skills__container {
+    width: 90%;
+  }
+
+  .members__container {
+    width: 90%;
+  }
+
+  .member__list {
+    width: 500%;
+    display: flex;
+  }
+
+  .member {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+  }
+
+  .contact__container {
+    width: 90%;
+  }
+
+  .footbar__container {
+    width: 90%;
+  }
+
+  .footbar__cube6 {
+    justify-content: center;
+  }
+
+  .footbar__hj {
+    justify-content: center;
   }
 }
