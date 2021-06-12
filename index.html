@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web_Clone</title>
+    <meta name="description" content="Portfolio for developer ShimHyeokJin" />
+    <meta name="author" conetent="ShimHyeokJin" />
+    <link rel="icon" type="image/png" href="imgs/neshot/neshot.png" />
+    <title>Web Clone</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -25,20 +28,26 @@
   <body>
     <!-- navbar -->
     <nav id="navbar">
-      <h2 class="navbar__title">Shim Hyeok Jin</h2>
+      <h2 class="navbar__title">HyeokJin</h2>
       <ul class="navbar__menus">
-        <li class="navbar__menu">HOME</li>
-        <li class="navbar__menu">SERVICE</li>
-        <li class="navbar__menu">PROJECT</li>
-        <li class="navbar__menu">ABOUT US</li>
-        <li class="navbar__menu">CONTACT</li>
+        <li class="navbar__menu" data-menu="#home">HOME</li>
+        <li class="navbar__menu" data-menu="#service">SERVICE</li>
+        <li class="navbar__menu" data-menu="#projects">PROJECT</li>
+        <li class="navbar__menu" data-menu="#about">ABOUT US</li>
+        <li class="navbar__menu" data-menu="#contact">CONTACT</li>
       </ul>
+      <input type="checkbox" id="toggle_check" />
+      <label for="toggle_check" class="toggle">
+        <div class="toggle-bar"></div>
+        <div class="toggle-bar"></div>
+        <div class="toggle-bar"></div>
+      </label>
     </nav>
 
     <!-- section home slide images -->
-    <section id="home">
+    <section id="home" data-section="home">
       <h1 class="home-title">
-        Responsive Web<br />
+        Responsive Web
         <!-- Creative Design - ShimHyeokJin -->
       </h1>
       <!-- image slider start -->
@@ -398,7 +407,7 @@
           <div class="skill">
             <div class="skill__description" data-skill="90%">
               <span>열정</span>
-              <span>90%</span>
+              <span></span>
             </div>
             <div class="skill__bar">
               <div class="skill__value"></div>
@@ -407,7 +416,7 @@
           <div class="skill">
             <div class="skill__description" data-skill="80%">
               <span>고집</span>
-              <span>80%</span>
+              <span></span>
             </div>
             <div class="skill__bar">
               <div class="skill__value"></div>
@@ -416,7 +425,7 @@
           <div class="skill">
             <div class="skill__description" data-skill="85%">
               <span>까칠함</span>
-              <span>85%</span>
+              <span></span>
             </div>
             <div class="skill__bar">
               <div class="skill__value"></div>
@@ -571,7 +580,7 @@
           </p>
         </div>
         <div class="footbar__hj">
-          <p>Clone Coding ShimHyeokJin</p>
+          <p>Clone Coding by ShimHyeokJin</p>
           <p>
             <a href="https://github.com/shj3497" target="_blank">
               <i class="fab fa-github"></i>
