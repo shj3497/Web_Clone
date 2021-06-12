@@ -68,7 +68,10 @@ navbar_menus.addEventListener('click', (e) => {
   scrollGo.scrollIntoView({
     behavior:"smooth"
   });
+  
   navbar_menus.classList.remove('open');
+  const toggle_check = document.querySelector('#toggle_check');
+  toggle_check.checked = false;
 })
 
 // ToggleBtn Click Event
