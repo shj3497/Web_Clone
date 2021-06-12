@@ -4,5 +4,7 @@
 
 <br/>
 
-Cafe24에 있는 웹페이지를 선택하여 만들어 보았습니다.  
-[CUBE STYLE](http://bdmp-006.cafe24.com/bizdemo106491/)
+Cafe24에 있는 반응형 웹페이지를 선택하여 만들어 보았습니다.  
+반응형 : PC, Tablet pc, Mobile  
+[CUBE STYLE](http://bdmp-006.cafe24.com/bizdemo106491/)  
+[Clone Page](https://shj3497.github.io/Web_Clone/)

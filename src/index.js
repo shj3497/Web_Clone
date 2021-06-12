@@ -68,6 +68,7 @@ navbar_menus.addEventListener('click', (e) => {
   scrollGo.scrollIntoView({
     behavior:"smooth"
   });
+  navbar_menus.classList.remove('open');
 })
 
 // ToggleBtn Click Event

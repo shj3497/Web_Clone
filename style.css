@@ -583,14 +583,15 @@ textarea:-ms-input-placeholder {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   background: whitesmoke;
 }
 
 .skills__container {
   width: 70%;
   margin: auto;
-  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .skills__title {
@@ -902,7 +903,6 @@ textarea:-ms-input-placeholder {
   #navbar.navbar-pixed {
     padding: 0px;
     padding-top: 3px;
-    padding-bottom: 0px;
   }
 
   .navbar__title {
